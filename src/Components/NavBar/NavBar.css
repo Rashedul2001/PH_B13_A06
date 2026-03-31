@@ -1,0 +1,15 @@
+a{
+    cursor: pointer;
+}
+ul li a {
+    font-weight: 600;
+    cursor: pointer;
+    transition: all;
+    transition: 500ms;
+    padding: 0px 10px;
+
+}
+ul li:hover {
+    background-color: #d1e0f2;
+    border-radius: 8px;
+}
