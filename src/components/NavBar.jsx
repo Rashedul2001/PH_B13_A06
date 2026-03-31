@@ -1,6 +1,6 @@
 import React, { Component, useState } from 'react';
-import "./NavBar.css";
-import cartIcon from "../../assets/shopping-cart.png";
+import "../styles/NavBar.css";
+import cartIcon from "../assets/shopping-cart.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 

@@ -1,7 +1,7 @@
-import { ToastContainer } from 'react-toastify'
-import './App.css'
-import NavBar from './Components/NavBar/NavBar'
-import Banner from './Components/Banner/Banner'
+import { ToastContainer } from 'react-toastify';
+import './App.css';
+import NavBar from './Components/NavBar';
+import Banner from './Components/Banner';
 
 function App() {
 

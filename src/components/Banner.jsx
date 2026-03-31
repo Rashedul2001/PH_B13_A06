@@ -1,7 +1,7 @@
-import circle from "../../assets/circle.svg";
-import playIcon from "../../assets/Play.png"
-import bannerImage from "../../assets/banner.png"
-import "../../App.css"
+import circle from "../assets/circle.svg";
+import playIcon from "../assets/Play.png"
+import bannerImage from "../assets/banner.png"
+import "../App.css"
 
 const Banner = () => {
     return (
