@@ -6,6 +6,6 @@ body {
   font-family: "Manrope", sans-serif;
 }
 
-.blue-to-purple-linear {
+.vp-gradient {
   @apply bg-linear-to-r from-violet-700 to-purple-600;
 }
