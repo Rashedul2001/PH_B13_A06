@@ -1,6 +1,6 @@
 const Stats = () => {
     return (
-        <div className="p-16 flex flex-col md:flex-row justify-around items-center  blue-to-purple-linear ">
+        <div className="p-16 flex flex-col md:flex-row justify-around items-center  vp-gradient ">
             <div>
                 <p className="font-extrabold text-white text-6xl text-center ">50K+</p>
                 <p className="font-medium text-white opacity-80  text-2xl text-center">Active Users</p>

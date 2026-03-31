@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "name": "Canva Pro",
+        "description": "Design tool with templates, graphics, and collaboration features.",
+        "price": 12.99,
+        "period": "monthly",
+        "tag": "popular",
+        "tagType": "popular",
+        "features": [
+            "100+ templates",
+            "Brand Kit",
+            "Export to PDF"
+        ],
+        "icon": "https://i.ibb.co/Y48NngbJ/canva.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Grammarly Premium",
+        "description": "AI-powered writing assistant for grammar, tone, and clarity.",
+        "price": 30.00,
+        "period": "monthly",
+        "tag": "best seller",
+        "tagType": "best seller",
+        "features": [
+            "Advanced grammar checks",
+            "Plagiarism detection",
+            "Tone suggestions"
+        ],
+        "icon": "https://i.ibb.co/jjk64HF/grammarly-icon.webp"
+    },
+    {
+        "id": 3,
+        "name": "Notion Plus",
+        "description": "Workspace for notes, docs, tasks, and databases.",
+        "price": 8.00,
+        "period": "monthly",
+        "tag": "new",
+        "tagType": "new",
+        "features": [
+            "Team collaboration",
+            "Kanban boards",
+            "API integrations"
+        ],
+        "icon": "https://i.ibb.co/GvrYVHR4/notion.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Figma Professional",
+        "description": "Collaborative design and prototyping platform.",
+        "price": 12.00,
+        "period": "monthly",
+        "tag": "popular",
+        "tagType": "popular",
+        "features": [
+            "Real-time collaboration",
+            "Vector editing",
+            "Design systems"
+        ],
+        "icon": "https://i.ibb.co/dJD515j2/figma.png"
+    },
+    {
+        "id": 5,
+        "name": "Slack Standard",
+        "description": "Messaging platform for teams with integrations.",
+        "price": 6.67,
+        "period": "monthly",
+        "tag": "best seller",
+        "tagType": "best seller",
+        "features": [
+            "Channels",
+            "File sharing",
+            "App integrations"
+        ],
+        "icon": "https://i.ibb.co/kTvS9R1/slack.png"
+    },
+    {
+        "id": 6,
+        "name": "Trello Premium",
+        "description": "Project management tool with boards, lists, and cards.",
+        "price": 10.00,
+        "period": "monthly",
+        "tag": "popular",
+        "tagType": "popular",
+        "features": [
+            "Unlimited boards",
+            "Timeline view",
+            "Automation"
+        ],
+        "icon": "https://i.ibb.co/HD9vFDTq/trello.webp"
+    },
+    {
+        "id": 7,
+        "name": "Zoom Pro",
+        "description": "Video conferencing solution with extended features.",
+        "price": 14.99,
+        "period": "monthly",
+        "tag": "best seller",
+        "tagType": "best seller",
+        "features": [
+            "HD video",
+            "Cloud recording",
+            "Breakout rooms"
+        ],
+        "icon": "https://i.ibb.co/Y4Kr8VvM/zoom.png"
+    },
+    {
+        "id": 8,
+        "name": "GitHub Copilot",
+        "description": "AI-powered coding assistant integrated into IDEs.",
+        "price": 10.00,
+        "period": "monthly",
+        "tag": "new",
+        "tagType": "new",
+        "features": [
+            "Code suggestions",
+            "Context-aware completions",
+            "Supports multiple languages"
+        ],
+        "icon": "https://i.ibb.co/1JrH7qB5/github-copilot.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Premium Stock Assets",
+        "description": "High-quality stock photos, videos, and illustrations for creative projects.",
+        "price": 29.99,
+        "period": "monthly",
+        "tag": "best seller",
+        "tagType": "best seller",
+        "features": [
+            "Unlimited downloads",
+            "Royalty-free licensing",
+            "HD and 4K content"
+        ],
+        "icon": "https://i.ibb.co/mrq9Rcxc/stock.png"
+    }
+]
