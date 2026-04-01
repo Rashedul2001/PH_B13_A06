@@ -22,16 +22,16 @@ const ProductContainer = ({ cartItems, setCartItems }) => {
                 <p className='text-gray-500'>Choose from our curated collection of premium digital products designed <br /> to boost your productivity and creativity. </p>
                 <div className='flex items-center justify-center'>
                     <button className={`btn p-2 rounded-full ${selectedTab === "Products" ? selectedStyle : "font-medium"} `} onClick={() => setSelectedTab("Products")}>Products</button>
-                    <button className={`btn py-2 px-4 rounded-full ${selectedTab === "Cart" ? selectedStyle : "font-medium"}`} onClick={() => setSelectedTab("Cart")}>cart{cartItems.length > 0 && `(${cartItems.length})`}</button></div>
+                    <button className={`btn py-2 px-4 rounded-full ${selectedTab === "Cart" ? selectedStyle : "font-medium"}`} onClick={() => setSelectedTab("Cart")}>Cart{cartItems.length > 0 && `(${cartItems.length})`}</button></div>
             </div>
             {
                 selectedTab === "Products" ? (
                     <Suspense fallback={<span className="mt-5 absolute left-1/2 loading loading-spinner loading-xl"></span>}>
-                        <Products productPromise={fetchProducts()} />
+                        <Products productPromise={fetchProducts()} cartItems={cartItems} setCartItems={setCartItems} />
                     </Suspense>
                 ) :
                     (
-                        <Cart cartItems={cartItems} />
+                        <Cart cartItems={cartItems} setCartItems={setCartItems} />
                     )
 
             }

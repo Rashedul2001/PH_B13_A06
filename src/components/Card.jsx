@@ -13,7 +13,7 @@ const featureList = (features) => {
 }
 
 
-const Card = ({ product }) => {
+const Card = ({ product, cartItems, setCartItems }) => {
 
     return (
         <div className="p-5 space-y-4">
@@ -25,7 +25,7 @@ const Card = ({ product }) => {
             <p className="text-gray-500">{product.description}</p>
             <p><span className="text-2xl font-bold ">${product.price}</span><span className="text-gray-500">/{product.period}</span></p>
             {featureList(product.features)}
-            <button className="vp-gradient py-3 px-4 w-full rounded-full text-white font-bold btn">Buy Now</button>
+            <button className="vp-gradient py-3 px-4 w-full rounded-full text-white font-bold btn" onClick={() => setCartItems([...cartItems.filter((item) => item.id !== product.id), product])}>Buy Now</button>
 
         </div>
 
