@@ -8,8 +8,8 @@ const PricingSection = () => {
             <p className='text-center text-gray-500 mb-10'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
 
             
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-10/12 mx-auto '>
-                <div className='space-y-6 flex-1 p-6'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-10/12 mx-auto gap-3'>
+                <div className='space-y-6 flex-1 p-6 rounded-2xl shadow-2xl '>
                     <div>
                         <h4 className='text-2xl font-bold'>Starter</h4>
                         <p className='text-gray-500'>Perfect for getting started</p>
@@ -23,7 +23,7 @@ const PricingSection = () => {
                     </div>
                     <button className="text-white vp-gradient w-full py-2 rounded-full font-bold">Get Started Free</button>
                 </div>
-                <div className='space-y-6 flex-1 p-6 vp-gradient rounded-2xl'>
+                <div className='space-y-6 flex-1 p-6 vp-gradient rounded-2xl relative shadow-2xl '>
                     <div>
                         <h4 className='text-2xl font-bold text-white'>Pro</h4>
                         <p className='text-white'>Best for professionals</p>
@@ -38,8 +38,9 @@ const PricingSection = () => {
                         <li className="flex gap-1 items-center"><IoCheckmarkSharp className="text-white" /> <span className="text-white font-medium">Advanced analytics</span></li>
                     </div>
                     <button className=" bg-white w-full py-2 rounded-full font-bold"><span className='vp-gradient text-transparent bg-clip-text '>Get Started Free</span></button >
+                    <button className='bg-yellow-200 text-yellow-600 px-2 py-1 rounded-full font-medium absolute -top-4 left-[calc(50%-4em)] whitespace-nowrap  '>Most Popular</button>
                 </div>
-                <div className='space-y-6 flex-1 p-6'>
+                <div className='space-y-6 flex-1 p-6 rounded-2xl shadow-2xl'>
                     <div>
                         <h4 className='text-2xl font-bold'>Enterprise</h4>
                         <p className='text-gray-500'>For teams and businesses</p>

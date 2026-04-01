@@ -1,8 +1,8 @@
 import React, { Component, useState } from 'react';
 import "../styles/NavBar.css";
-import cartIcon from "../assets/shopping-cart.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
+import { BsCart } from "react-icons/bs";
 
 
 
@@ -39,12 +39,13 @@ const NavBar = ({ cartItems }) => {
                 </ul>
             </div>
             <div className='space-x-4 flex items-center'>
-                <a className='relative'><img src={cartIcon} alt="shopping cart" className='w-6 h-auto' />
+                <a className='relative'><BsCart  className='w-6 h-6'/>
                     {cartItems.length > 0 && (
-                        <span className='absolute -top-1 -right-1 bg-amber-600 text-white w-4 h-4 text-[8px] rounded-full text-center leading-none '>{cartItems.length}</span>
+                        <span className='absolute -top-1 -right-1 bg-amber-600 text-white w-4 h-4 text-xs rounded-full flex items-center justify-center'><p>{cartItems.length}</p></span>
 
                     )
-                    }</a>
+                    }
+                </a>
                 <a className='font-semibold'>Login</a>
                 <button className="vp-gradient py-1 sm:py-2 px-3  rounded-full sm:font-semibold whitespace-nowrap text-white cursor-pointer" >Get Started</button>
             </div>

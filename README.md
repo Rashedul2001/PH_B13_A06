@@ -7,6 +7,7 @@ This is an Assignment project from Programming Hero where I had to make a beauti
 - JavaScript (ES6+)
 - React-Toastify
 - Daisy UI
+- React-Icons
 
 ## ✨ Features
 1. **Responsive Design** - Works seamlessly across desktop, table and mobile. 

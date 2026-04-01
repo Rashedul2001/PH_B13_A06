@@ -24,7 +24,7 @@ const handleClick = () =>{
     }
 }
     return (
-        <div className="p-5 space-y-4">
+        <div className="p-5 space-y-4 shadow-2xl rounded-2xl">
             <div className="flex justify-end ">
                 <p className="bg-blue-200 py-1 px-2.5 font-medium rounded-full">{product.tagType}</p>
             </div>
