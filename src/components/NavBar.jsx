@@ -7,10 +7,9 @@ import { IoMdClose } from "react-icons/io";
 
 
 
-const NavBar = () => {
+const NavBar = ({ cartItems }) => {
 
     const [mobileMenuStatus, setMobileMenuStatus] = useState(true);
-
 
 
     return (
@@ -40,7 +39,12 @@ const NavBar = () => {
                 </ul>
             </div>
             <div className='space-x-4 flex items-center'>
-                <a className=''><img src={cartIcon} alt="shopping cart" /></a>
+                <a className='relative'><img src={cartIcon} alt="shopping cart" className='w-6 h-auto' />
+                    {cartItems.length > 0 && (
+                        <span className='absolute -top-1 -right-1 bg-amber-600 text-white w-4 h-4 text-[8px] rounded-full text-center leading-none '>{cartItems.length}</span>
+
+                    )
+                    }</a>
                 <a className='font-semibold'>Login</a>
                 <button className="vp-gradient py-1 sm:py-2 px-3  rounded-full sm:font-semibold whitespace-nowrap text-white cursor-pointer" >Get Started</button>
             </div>

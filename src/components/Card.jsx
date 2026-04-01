@@ -16,10 +16,11 @@ const featureList = (features) => {
 const Card = ({ product }) => {
 
     return (
-        <div className="p-5 space-x-4">
+        <div className="p-5 space-y-4">
             <div className="flex justify-end ">
-                <p className="bg-blue-200 py-1 px-2.5 font-medium rounded-full">{product.tagType}</p></div>
-            <img src={product.icon} alt={product.name} className="w-10 h-auto " />
+                <p className="bg-blue-200 py-1 px-2.5 font-medium rounded-full">{product.tagType}</p>
+            </div>
+            <img src={product.icon} alt={product.name} className="w-16 h-fit " />
             <h4 className="text-2xl font-bold">{product.name}</h4>
             <p className="text-gray-500">{product.description}</p>
             <p><span className="text-2xl font-bold ">${product.price}</span><span className="text-gray-500">/{product.period}</span></p>
