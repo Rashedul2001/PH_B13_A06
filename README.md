@@ -4,7 +4,7 @@ This is an Assignment project from Programming Hero where I had to make a beauti
 ## 🛠️ Technologies Used
 - React
 - Tailwind CSS 
-- avaScript (ES6+)
+- JavaScript (ES6+)
 - React-Toastify
 - Daisy UI
 
