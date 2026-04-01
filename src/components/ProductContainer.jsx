@@ -1,9 +1,6 @@
-import React, { Suspense, useState } from 'react';
+import React, { Suspense, useMemo, useState } from 'react';
 import Products from './Products';
 import Cart from './Cart'
-
-
-
 
 const fetchProducts = async () => {
     const response = await fetch('/data/products.json');
@@ -13,6 +10,7 @@ const fetchProducts = async () => {
 const ProductContainer = ({ cartItems, setCartItems }) => {
     const [selectedTab, setSelectedTab] = useState("Products")
     const [total, setTotal] = useState(0);
+    const productPromise = useMemo(() => fetchProducts(), []);
     const selectedStyle = 'vp-gradient text-white font-bold';
 
 
@@ -28,7 +26,7 @@ const ProductContainer = ({ cartItems, setCartItems }) => {
             {
                 selectedTab === "Products" ? (
                     <Suspense fallback={<span className="mt-5 absolute left-1/2 loading loading-spinner loading-xl"></span>}>
-                        <Products productPromise={fetchProducts()} cartItems={cartItems} setCartItems={setCartItems} setTotal={setTotal} />
+                        <Products productPromise={productPromise} cartItems={cartItems} setCartItems={setCartItems} setTotal={setTotal} />
                     </Suspense>
                 ) :
                     (
