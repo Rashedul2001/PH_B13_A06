@@ -16,7 +16,7 @@ const ProductContainer = ({ cartItems, setCartItems }) => {
 
 
     return (
-        <div className="px-5 py-32 container mx-auto ">
+        <div className="px-5 py-12 md:py-32 container mx-auto ">
             <div className='space-y-4 text-center'>
                 <h1 className='text-3xl md:text-5xl font-extrabold'>Premium Digital Tools</h1>
                 <p className='text-gray-500'>Choose from our curated collection of premium digital products designed <br /> to boost your productivity and creativity. </p>

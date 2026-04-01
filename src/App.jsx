@@ -5,6 +5,7 @@ import Banner from './components/Banner';
 import Stats from './components/Stats';
 import ProductContainer from './components/ProductContainer';
 import { useState } from 'react';
+import Steps from './components/Steps';
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -16,6 +17,7 @@ function App() {
       <Banner />
       <Stats />
       <ProductContainer cartItems={cartItems} setCartItems={setCartItems} />
+      <Steps/>
 
 
     </>
