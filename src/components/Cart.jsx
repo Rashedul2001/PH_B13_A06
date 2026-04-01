@@ -1,7 +1,13 @@
-import React from 'react';
+import { toast } from 'react-toastify';
 
-const Cart = ({ cartItems, setCartItems }) => {
-    const total = cartItems.reduce((acc, item) => acc + item.price, 0);
+
+const Cart = ({ cartItems, setCartItems, total, setTotal }) => {
+    const handleDelete = (item) => {
+        setCartItems(cartItems.filter((cartItem) => cartItem.id !== item.id));
+        setTotal(total - item.price);
+        toast.error(`${item.name} was removed from the Cart.`);
+
+    }
 
     return (
         <div className='mt-10 sm:p-10 space-y-6'>{
@@ -19,7 +25,7 @@ const Cart = ({ cartItems, setCartItems }) => {
                                             <p className='font-medium text-gray-500'>${item.price}</p>
                                         </div>
                                     </div>
-                                    <button className='text-red-500 font-bold cursor-pointer btn' onClick={() => setCartItems(cartItems.filter(cartItem => cartItem.id !== item.id))}>
+                                    <button className='text-red-500 font-bold cursor-pointer btn' onClick={() => handleDelete(item)}>
                                         Remove
                                     </button>
                                 </div>
@@ -30,7 +36,7 @@ const Cart = ({ cartItems, setCartItems }) => {
                         <p className=''>Total:</p>
                         <p className='font-bold text-2xl '>${total.toFixed(2)}</p>
                     </div>
-                    <button className='btn vp-gradient p-4 w-full rounded-full font-bold text-white ' onClick={()=> setCartItems([])}>Proceed to Checkout</button>
+                    <button className='btn vp-gradient p-4 w-full rounded-full font-bold text-white ' onClick={() => { setCartItems([]); toast("Checkout was successful!"); }}>Proceed to Checkout</button>
                 </>) : (
                 <p className='text-center text-gray-500'>Your cart is empty.</p>
             )}

@@ -1,4 +1,5 @@
 import { IoCheckmarkSharp } from "react-icons/io5";
+import { toast } from "react-toastify";
 
 
 
@@ -13,8 +14,15 @@ const featureList = (features) => {
 }
 
 
-const Card = ({ product, cartItems, setCartItems }) => {
+const Card = ({ product, cartItems, setCartItems, setTotal }) => {
 
+const handleClick = () =>{
+    if (!cartItems.find((item) => item.id === product.id)) {
+        setCartItems([...cartItems, product]);
+        setTotal(cartItems.reduce((acc, item) => acc + item.price, 0) + product.price);
+        toast.success(`${product.name} was successfully added to the Cart!`);
+    }
+}
     return (
         <div className="p-5 space-y-4">
             <div className="flex justify-end ">
@@ -25,7 +33,7 @@ const Card = ({ product, cartItems, setCartItems }) => {
             <p className="text-gray-500">{product.description}</p>
             <p><span className="text-2xl font-bold ">${product.price}</span><span className="text-gray-500">/{product.period}</span></p>
             {featureList(product.features)}
-            <button className="vp-gradient py-3 px-4 w-full rounded-full text-white font-bold btn" onClick={() => setCartItems([...cartItems.filter((item) => item.id !== product.id), product])}>Buy Now</button>
+            <button className="vp-gradient py-3 px-4 w-full rounded-full text-white font-bold btn" onClick={handleClick}>Buy Now</button>
 
         </div>
 

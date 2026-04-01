@@ -12,6 +12,7 @@ const fetchProducts = async () => {
 
 const ProductContainer = ({ cartItems, setCartItems }) => {
     const [selectedTab, setSelectedTab] = useState("Products")
+    const [total, setTotal] = useState(0);
     const selectedStyle = 'vp-gradient text-white font-bold';
 
 
@@ -27,11 +28,11 @@ const ProductContainer = ({ cartItems, setCartItems }) => {
             {
                 selectedTab === "Products" ? (
                     <Suspense fallback={<span className="mt-5 absolute left-1/2 loading loading-spinner loading-xl"></span>}>
-                        <Products productPromise={fetchProducts()} cartItems={cartItems} setCartItems={setCartItems} />
+                        <Products productPromise={fetchProducts()} cartItems={cartItems} setCartItems={setCartItems} setTotal={setTotal} />
                     </Suspense>
                 ) :
                     (
-                        <Cart cartItems={cartItems} setCartItems={setCartItems} />
+                        <Cart cartItems={cartItems} setCartItems={setCartItems} total={total} setTotal={setTotal} />
                     )
 
             }
