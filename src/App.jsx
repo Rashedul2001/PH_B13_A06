@@ -6,6 +6,7 @@ import Stats from './components/Stats';
 import ProductContainer from './components/ProductContainer';
 import { useState } from 'react';
 import Steps from './components/Steps';
+import PricingSection from './components/PricingSection';
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -18,6 +19,7 @@ function App() {
       <Stats />
       <ProductContainer cartItems={cartItems} setCartItems={setCartItems} />
       <Steps/>
+      <PricingSection/>
 
 
     </>
