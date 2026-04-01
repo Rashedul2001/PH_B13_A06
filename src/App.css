@@ -9,3 +9,12 @@ body {
 .vp-gradient {
   @apply bg-linear-to-r from-violet-700 to-purple-600;
 }
+footer div nav p{
+    @apply  text-white opacity-80;
+}
+footer div nav h4{
+    @apply text-xl text-white;
+}
+nav div img{
+  @apply bg-white rounded-full p-1 
+}

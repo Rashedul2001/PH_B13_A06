@@ -8,6 +8,7 @@ import { useState } from 'react';
 import Steps from './components/Steps';
 import PricingSection from './components/PricingSection';
 import ExtraSection from './components/ExtraSection';
+import Footer from './components/Footer';
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -22,6 +23,7 @@ function App() {
       <Steps/>
       <PricingSection/>
       <ExtraSection/>
+      <Footer/>
 
 
     </>
